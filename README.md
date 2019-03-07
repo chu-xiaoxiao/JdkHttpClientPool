@@ -24,8 +24,6 @@ System.out.println(HttpRequest.newRequest().url("http://www.baidu.com")
 队列存放下载地址，多线程消费队列。
 调用方法 直接调用静态下载方法
 ```
-String filename = img.split("/")[img.split("/").length-1];
-String path = String.format("/Users/zhangyuchen/Downloads/imgs/%s/%s/%s",searchWord,zhuanLan.getTitle(),filename);
-HttpDownload.download(img,path);
+HttpDownload.download(url,path);
 
 ```

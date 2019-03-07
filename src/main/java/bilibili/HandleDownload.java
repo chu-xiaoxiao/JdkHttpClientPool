@@ -48,7 +48,7 @@ public class HandleDownload {
         zhuanLan.getImgs().forEach(img -> {
             String filename = img.split("/")[img.split("/").length-1];
             String path = String.format("/Users/zhangyuchen/Downloads/imgs/%s/%s/%s",searchWord,zhuanLan.getTitle(),filename);
-            new HttpDownload().download(img,path);
+            HttpDownload.download(img,path);
         });
     }
 }

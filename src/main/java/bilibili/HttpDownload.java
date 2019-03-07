@@ -83,7 +83,7 @@ public class HttpDownload {
      * @param filepath
      * @return
      */
-    public String download(String url, String filepath) {
+    public static String download(String url, String filepath) {
         DOWNLOADPATHS.add(new DownloadPath(url, filepath));
         //threadPoolExecutor.execute();
         return "";

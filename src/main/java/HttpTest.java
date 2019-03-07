@@ -11,7 +11,8 @@ public class HttpTest {
 
     public static void main(String[] args) {
         try {
-            System.out.println(new HttpRequest().newRequest().url("http://www.baidu.com").Get(HttpResponse.BodyHandlers.ofByteArray()));
+            System.out.println(HttpRequest.newRequest().url("http://www.baidu.com")
+                    .Get(HttpResponse.BodyHandlers.ofByteArray()));
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }

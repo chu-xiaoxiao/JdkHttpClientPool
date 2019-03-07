@@ -9,3 +9,8 @@ out
 gen
 /log/
 /target/
+.DS_Store
+src/.DS_Store
+src/main/.DS_Store
+sshkey
+sshkey.pub

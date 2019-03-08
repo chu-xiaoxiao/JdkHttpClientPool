@@ -16,18 +16,9 @@ import java.util.concurrent.TimeUnit;
 import java.util.stream.Stream;
 
 /**
- * 说明
- * 利用httpclient下载文件
- * maven依赖
- * <dependency>
- * <groupId>org.apache.httpcomponents</groupId>
- * <artifactId>httpclient</artifactId>
- * <version>4.0.1</version>
- * </dependency>
- * 可下载http文件、图片、压缩文件
- * bug：获取response header中Content-Disposition中filename中文乱码问题
- *
- * @author tanjundong
+ * 文件下载类
+ * @author zhangyuchen
+ * @date 2019年03月08日13:54:01
  */
 @Slf4j
 public class HttpDownload {

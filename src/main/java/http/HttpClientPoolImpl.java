@@ -34,8 +34,8 @@ public class HttpClientPoolImpl extends HttpClientPool {
                 .timeout(Duration.ofMillis(600000))
                 .GET()
                 .build();
-        if (httpRequest.headers != null) {
-            builder.headers(httpRequest.headers);
+        if (!CollectionUtils.isEmpty(httpRequest.headers)) {
+            builder.headers(httpRequest.headers.toArray(String[]::new));
         }
         HttpResponse<T> httpResponse =  httpClientItem.getHttpClient().send(builder.build(), responseBodyHandler);
         httpClientItem.free=true;
@@ -51,8 +51,8 @@ public class HttpClientPoolImpl extends HttpClientPool {
                 .timeout(Duration.ofMillis(600000))
                 .POST(HttpRequest.BodyPublishers.ofString(httpRequest.body))
                 .build();
-        if (httpRequest.headers != null) {
-            builder.headers(httpRequest.headers);
+        if (!CollectionUtils.isEmpty(httpRequest.headers)) {
+            builder.headers(httpRequest.headers.toArray(String[]::new));
         }
         HttpResponse<T> httpResponse = httpClientItem.getHttpClient().send(builder.build(), responseBodyHandler);
         httpClientItem.free = true;

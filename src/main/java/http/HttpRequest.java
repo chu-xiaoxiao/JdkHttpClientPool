@@ -1,10 +1,14 @@
 package http;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.http.client.protocol.RequestDefaultHeaders;
+import org.assertj.core.util.Lists;
 
 import java.io.IOException;
 import java.net.http.HttpResponse;
 import java.nio.charset.Charset;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author : zhangyuchen
@@ -21,7 +25,8 @@ public class HttpRequest {
 
         String body;
 
-        String[] headers;
+        List<String> headers = Lists.newArrayList();
+
 
         public Request url(String url){
             this.url = url;
@@ -33,8 +38,8 @@ public class HttpRequest {
             return this;
         }
 
-        public Request header(String... headers){
-            this.headers = headers;
+        public Request headers(String... headers){
+            this.headers.addAll(Arrays.asList(headers));
             return this;
         }
 
@@ -59,6 +64,15 @@ public class HttpRequest {
 
     public static Request newRequest(){
         return new Request();
+    }
+
+    public static Request newDefaultRequest(){
+        Request request = new Request();
+        request.headers(
+                "Access-Control-Allow-Headers", "Origin,No-Cache,X-Requested-With,If-Modified-Since,Pragma,Last-Modified,Cache-Control,Expires,Content-Type,Access-Control-Allow-Credentials",
+                "User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36"
+        );
+        return request;
     }
 
 }

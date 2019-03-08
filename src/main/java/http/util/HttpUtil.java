@@ -18,7 +18,7 @@ public class HttpUtil {
         try {
             log.info("请求地址[{}]",url);
             document = Jsoup.parse(HttpRequest.newRequest()
-                    .header(
+                    .headers(
                             "Access-Control-Allow-Headers","Origin,No-Cache,X-Requested-With,If-Modified-Since,Pragma,Last-Modified,Cache-Control,Expires,Content-Type,Access-Control-Allow-Credentials",
                             "User-Agent","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36"
                     )

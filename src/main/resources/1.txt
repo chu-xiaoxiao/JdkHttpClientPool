@@ -1,76 +1,20 @@
-10 1 exposure_uv 曝光uv 1 1 integer 0   2019-02-18 14:30:05 0
-11 1 exposure_uv_k 曝光uv/1000 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-12 1 buy_user_cnt 购买用户数 1 1 integer 0   2019-02-18 14:30:05 0
-13 1 buy_user_rate 转化率 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-14 1 mall_price_amt 商城价 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-15 1 mall_price_profit_amt 定价毛利 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-16 1 mall_price_profit_rate 定价毛利率 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-17 1 vip_price 会员价 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-18 1 vip_price_profit_amt 会员价毛利 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-19 1 vip_price_profit_rate 会员价毛利率 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-20 1 vip_price_subsidy_amt 会员价补贴 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-21 1 vip_price_subsidy_rate 会员价补贴率 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-22 1 payment_amt 支付金额 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-23 1 refund_amt 退款 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-24 1 storage_back_amt 余额返现 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-25 1 real_income_amt 实收收入 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-26 1 real_income_k_amt 实收收入(K) 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-27 1 real_income_total_amt 实收合计 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-28 1 real_income_percent 实收占比 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-29 1 product_cost_amt 商品成本 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-30 1 unloss_real_income_profit_amt 扣损前实收毛利 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-31 1 unloss_real_income_profit_rate 扣损前实收毛利率 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-32 1 loss_all_amt 损耗金额 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-33 1 loss_all_rate 损耗占比 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-34 1 loss_amt 不含加工损耗金额 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-35 1 loss_rate 不含加工损耗占比 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-36 1 material_cnt 原料份数 1 1 integer 0   2019-02-18 14:30:05 0
-37 1 refund_material_cnt 退款原料份数 1 1 integer 0   2019-02-18 14:30:05 0
-38 1 refund_rate 退款率 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-39 1 market_subsidy_amt 营销补贴费 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-40 1 market_subsidy_rate 营销补贴费率 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-41 1 hotsell_promotion_amt 爆品促销费 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-42 1 hotsell_promotion_rate 爆品促销费率 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-43 1 mall_promotion_amt 商城促销费 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-44 1 mall_promotion_rate 商城促销费率 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-45 1 vip_price_profit_sum_amt 会员价毛利 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-46 1 vip_price_profit_sum_rate 会员价毛利率|扣损前实收毛利率+营销补贴费率+商城率+爆品率 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-47 1 per30_material_sale_cnt 30%top原料销售数量 1 1 integer 0   2019-02-18 14:30:05 0
-48 1 per30_material_saleout_cnt 30%top原料售罄数量 1 1 integer 0   2019-02-18 14:30:05 0
-49 1 per30_material_saleout_rate 30%top原料售罄率 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-50 1 central_warehouse_inventory_cnt 大仓24点期末库存 1 1 integer 0   2019-02-18 14:30:05 0
-51 1 day7_avg_sale_cnt 7日平均销量（全仓） 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-52 1 central_warehouse_turnover_days 大仓周转天数 1 1 decimal(16,1) 0   2019-02-18 14:30:05 0
-53 1 warehouse_inventory_cnt 微仓24点期末库存 1 1 integer 0   2019-02-18 14:30:05 0
-54 1 warehouse_day7_avg_sale_cnt 7日平均销量（微仓） 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-55 1 warehouse_turnover_days 微仓周转天数 1 1 decimal(16,1) 0   2019-02-18 14:30:05 0
-56 1 platform_payment_amt 平台支付金额 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-57 1 platform_post_fee_amt 平台邮费 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-58 1 platform_subsidy_amt 平台反补贴 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-59 1 platform_real_income_amt 平台实收收入 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-60 1 platform_real_income_k_amt 平台实收实收收入(K) 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-61 1 platform_product_cost_amt 平台成本 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-62 1 platform_unloss_real_income_profit_amt 平台扣损前实收毛利 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-63 1 platform_unloss_real_income_profit_rate 平台扣损前实收毛利率 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-64 1 payment_discount_amt 折扣后支付金额 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-65 1 order_discount_amt 订单折扣后金额 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-66 1 post_fee_amt 邮费 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-67 1 order_cnt 订单数 1 1 integer 0   2019-02-18 14:30:05 0
-68 1 order_total_cnt 订单数合计 1 1 integer 0   2019-02-18 14:30:05 0
-69 1 order_rate 订单数占比 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-70 1 pv pv 1 1 integer 0   2019-02-18 14:30:05 0
-71 1 addcart_uv 加车uv 1 1 integer 0   2019-02-18 14:30:05 0
-72 1 inner_pack_cost_amt 内包材 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-73 1 inner_pack_cost_rate 内包材占比 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-74 1 loss_real_income_profit_amt 扣损后实收毛利 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-75 1 loss_real_income_profit_rate 扣损后实收毛利率 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-76 1 outer_pack_cost_amt 外包材 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-77 1 inventory_cnt 期末库存 1 1 integer 0   2019-02-18 14:30:05 0
-78 1 turnover_days 周转天数 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-79 1 inventory_begine_05_cnt 大仓05点期初库存 1 1 integer 0   2019-02-18 14:30:05 0
-80 1 inventory_begine_09_cnt 微仓09点期初库存 1 1 integer 0   2019-02-18 14:30:05 0
-81 1 warehouse_begine_09_turnover_days 微仓09点期初周转天数 1 1 integer 0   2019-02-18 14:30:05 0
-82 1 material_sale_cnt 原料销售数量 1 1 integer 0   2019-02-18 14:30:05 0
-83 1 material_saleout_cnt 售罄原料数量 1 1 integer 0   2019-02-18 14:30:05 0
-84 1 material_saleout_rate 售罄率 1 1 decimal(16,4) 0   2019-02-18 14:30:05 0
-85 1 dt_etl_updated  1 1 timestamp 0   2019-02-18 14:55:56 1
+849 6 uv UV 1 1 integer 0     0
+850 6 uv_radio UV同比 1 1 varchar 0     0
+851 6 conv 转化率 1 1 real 0     0
+852 6 conv_radio 转化率同比 1 1 varchar 0     0
+853 6 buyer_num 购买用户 1 1 integer 0     0
+854 6 order_num 订单量 1 1 integer 0     0
+855 6 order_num_radio 订单量同比 1 1 varchar 0     0
+856 6 mingyi_income 名义收入 1 1 real 0     1
+857 6 actual_income 实际收入 1 1 real 0     0
+858 6 actual_income_radio 实收同比 2 1 varchar 0     0
+859 6 unit_price 实收单价 1 1 real 0     0
+860 6 unit_price_radio 实收单价同比 1 1 varchar 0     0
+861 6 yxfy_radio 营销补贴费率 1 1 real 0     0
+862 6 spu_radio  1 1 real 0     1
+863 6 ml_radio 实收毛利率 1 1 real 0     1
+864 6 sjbt_radio 社交补贴率 1 1 real 0     1
+865 6 djml_radio 扣损前实收毛利率 1 1 real 0     0
+866 6 yuce_income 预估实收 2 1 real 0     0
+867 6 baopinlv 爆品促销率 1 1 real 0     1
+868 6 cuxiaolv 商场促销率 1 1 real 0     0

@@ -35,16 +35,20 @@ public class HttpDownload {
 
 
     /**
-     * 根据url下载文件，保存到filepath中
      *
-     * @param url
-     * @param filepath
+     * 将下载下载任务添加到下载队列中。
+     * @param url 下载地址
+     * @param filepath 保存路径
      * @return
      */
     public static void download(String url, String filepath) {
         DOWNLOAD_PATHS.add(new DownloadPath(url, filepath));
     }
 
+    /**
+     * 下载线程
+     * 下载线程从下载队列中取出下载任务并执行下载操作
+     */
     static class DownloadThread implements Runnable {
 
         volatile Boolean done = true;
@@ -52,6 +56,11 @@ public class HttpDownload {
         @Override
         public void run() {
             for (; ; ) {
+                try {
+                    Thread.sleep(100L);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 try {
                     while (!this.done || CollectionUtils.isEmpty(DOWNLOAD_PATHS)) {
                         Thread.sleep(100);
